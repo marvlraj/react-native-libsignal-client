@@ -1,0 +1,61 @@
+package expo.modules.libsignalclient
+
+import expo.modules.kotlin.modules.ModuleDefinitionBuilder
+
+internal fun ModuleDefinitionBuilder.registerIdentityAndKeyFunctions(module: ReactNativeLibsignalClientModule) {
+    Function("serviceIdServiceIdBinary", module::serviceIdServiceIdBinary)
+    Function("serviceIdServiceIdString", module::serviceIdServiceIdString)
+    Function("serviceIdServiceIdLog", module::serviceIdServiceIdLog)
+    Function("serviceIdParseFromServiceIdBinary", module::serviceIdParseFromServiceIdBinary)
+    Function("serviceIdParseFromServiceIdString", module::serviceIdParseFromServiceIdString)
+
+    Function("serverCertificateNew", module::serverCertificateNew)
+    Function("serverCertificateGetCertificate", module::serverCertificateGetCertificate)
+    Function("serverCertificateGetKey", module::serverCertificateGetKey)
+    Function("serverCertificateGetKeyId", module::serverCertificateGetKeyId)
+    Function("serverCertificateGetSignature", module::serverCertificateGetSignature)
+
+    Function("senderCertificateNew", module::senderCertificateNew)
+    Function("senderCertificateGetCertificate", module::senderCertificateGetCertificate)
+    Function("senderCertificateGetExpiration", module::senderCertificateGetExpiration)
+    Function("senderCertificateGetKey", module::senderCertificateGetKey)
+    Function("senderCertificateGetSenderE164", module::senderCertificateGetSenderE164)
+    Function("senderCertificateGetSenderUuid", module::senderCertificateGetSenderUuid)
+    Function("senderCertificateGetDeviceId", module::senderCertificateGetDeviceId)
+    Function("senderCertificateGetServerCertificate", module::senderCertificateGetServerCertificate)
+    Function("senderCertificateGetSignature", module::senderCertificateGetSignature)
+    Function("senderCertificateValidate", module::senderCertificateValidate)
+
+    Function("privateKeyGenerate", module::privateKeyGenerate)
+    Function("privateKeySign", module::privateKeySign)
+    Function("privateKeyAgree", module::privateKeyAgree)
+    Function("privateKeyGetPublicKey", module::privateKeyGetPublicKey)
+    Function("publicKeyCompare", module::publicKeyCompare)
+    Function("publicKeyGetPublicKeyBytes", module::publicKeyGetPublicKeyBytes)
+    Function("publicKeyVerify", module::publicKeyVerify)
+    Function("identityKeyPairSerialize", module::identityKeyPairSerialize)
+    Function("identityKeyPairDeserialize", module::identityKeyPairDeserialize)
+    Function("identityKeyPairSignAlternateIdentity", module::identityKeyPairSignAlternateIdentity)
+    Function("identityKeyVerifyAlternateIdentity", module::identityKeyVerifyAlternateIdentity)
+    Function("generateRegistrationId", module::generateRegistrationId)
+
+    Function("generateKyberKeyPair", module::generateKyberKeyPair)
+    Function("generateKyberRecord", module::generateKyberRecord)
+    Function("kyberPreKeyRecordGetId", module::kyberPreKeyRecordGetId)
+    Function("kyberPreKeyRecordGetPublicKey", module::kyberPreKeyRecordGetPublicKey)
+    Function("kyberPreKeyRecordGetSecretKey", module::kyberPreKeyRecordGetSecretKey)
+    Function("kyberPreKeyRecordGetSignature", module::kyberPreKeyRecordGetSignature)
+    Function("kyberPreKeyRecordGetTimestamp", module::kyberPreKeyRecordGetTimestamp)
+
+    Function("createAndProcessPreKeyBundle", module::createAndProcessPreKeyBundle)
+    Function("signedPreKeyRecordNew", module::signedPreKeyRecordNew)
+    Function("signedPreKeyRecordGetId", module::signedPreKeyRecordGetId)
+    Function("signedPreKeyRecordGetPrivateKey", module::signedPreKeyRecordGetPrivateKey)
+    Function("signedPreKeyRecordGetPublicKey", module::signedPreKeyRecordGetPublicKey)
+    Function("signedPreKeyRecordGetSignature", module::signedPreKeyRecordGetSignature)
+    Function("signedPreKeyRecordGetTimestamp", module::signedPreKeyRecordGetTimestamp)
+    Function("preKeyRecordNew", module::preKeyRecordNew)
+    Function("preKeyRecordGetId", module::preKeyRecordGetId)
+    Function("preKeyRecordGetPrivateKey", module::preKeyRecordGetPrivateKey)
+    Function("preKeyRecordGetPublicKey", module::preKeyRecordGetPublicKey)
+}

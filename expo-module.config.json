@@ -1,0 +1,12 @@
+{
+	"platforms": ["ios", "tvos", "android", "web"],
+	"ios": {
+		"modules": ["ReactNativeLibsignalClientModule", "ElasticCipherModule"]
+	},
+	"android": {
+		"modules": [
+			"expo.modules.libsignalclient.ReactNativeLibsignalClientModule",
+			"expo.modules.libsignalclient.ElasticCipher"
+		]
+	}
+}

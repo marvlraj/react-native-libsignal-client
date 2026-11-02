@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+
+# Build outputs & caches
+build/
+*.log
+.DS_Store
+
+# Android & Gradle
+.gradle/
+android/.settings/
+android/.classpath
+android/.project
+android/build/
+android/.cxx/
+android/*.iml
+
+# iOS / CocoaPods
+ios/Pods/
+ios/*.xcworkspace
+ios/*.xcuserdata
+
+# Expo
+.expo/
